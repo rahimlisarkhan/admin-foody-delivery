@@ -1,18 +1,11 @@
-import Content from "../../components/Content"
-// import CategoryContainer from "../../feature/category/CategoryContainer"
+import CategoryContainer from "../../feature/category/CategoryContainer"
 
+const CategoryPage = () => {
 
-
-const Category = () => {
-
-    return(
-        <Content>
-          <h1>Test CAtegory</h1>
-
-            {/* <CategoryContainer/> */}
-        </Content>
+    return (
+        <CategoryContainer />
     )
 }
 
 
-export default Category
+export default CategoryPage

@@ -1,16 +1,11 @@
 
 import React from 'react';
-import Content from '../../components/Content';
 
-
-const Dashboard = () => {
+const DashboardPage = () => {
     return (
-        <Content>
             <h1>Test Dashboard</h1>
-        </Content>
-
     )
 }
 
 
-export default Dashboard
+export default DashboardPage

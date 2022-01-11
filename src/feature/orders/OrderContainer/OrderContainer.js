@@ -4,7 +4,7 @@ import ContentHeader from "../../../components/ContentHeader";
 import OrderTable from "../OrderTable";
 
 
-export const OrderContent = () => {
+export const OrderContainer = () => {
     const { t } = useTranslation('translation', { keyPrefix: 'menu' });
 
     return(

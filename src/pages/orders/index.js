@@ -1,18 +1,11 @@
-import Content from "../../components/Content"
-// import OrderContent from "../../feature/orders/OrderContent"
+import OrderContainer from "../../feature/orders/OrderContainer"
 
-
-
-const Orders = () => {
+const OrdersPage = () => {
 
     return(
-        <Content>
-              <h1>Test Dashboard</h1>
-
-            {/* <OrderContent/> */}
-        </Content>
+         <OrderContainer/> 
     )
 }
 
 
-export default Orders
+export default OrdersPage

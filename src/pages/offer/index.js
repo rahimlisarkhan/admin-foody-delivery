@@ -1,17 +1,11 @@
-import Content from "../../components/Content"
-// import { OfferContent } from "../../feature/offer/OfferContent/OfferContent"
+import OfferContainer from "../../feature/offer/OfferContainer"
 
 
-
-const Offer = () => {
+const OfferPage = () => {
     return(
-        <Content>
-              <h1>Test Offer</h1>
-
-            {/* <OfferContent/> */}
-        </Content>
+            <OfferContainer/>
     )
 }
 
 
-export default Offer
+export default OfferPage
