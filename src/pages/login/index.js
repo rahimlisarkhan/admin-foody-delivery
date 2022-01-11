@@ -1,10 +1,10 @@
-
+import LoginContainer from "../../feature/login/LoginContainer"
 
 
 const Login = () => {
 
     return(
-        <h1>Login</h1>
+        <LoginContainer/>
     )
 }
 

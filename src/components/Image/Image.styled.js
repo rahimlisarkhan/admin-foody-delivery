@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ImageStyled = styled.img.attrs(({width, height})=>({
-    width: width || "24px",
-    height:height || "24px",
+    width: width || "100%",
+    height:height || "100%",
     
 }))`
     object-fit:${({cover}) => cover ? "cover" : "normal"};

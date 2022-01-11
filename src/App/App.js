@@ -3,10 +3,13 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
-import React, { Suspense } from 'react';
+import React, { lazy, Suspense } from 'react';
 import RootPage from '../pages';
 import { AppProvider } from "./AppProvider";
 import Loading from '../components/Loading/Loading';
+
+
+const LoginPage = lazy(()=>import('../pages/login'))
 
 function App() {
   return (
@@ -14,9 +17,7 @@ function App() {
       <AppProvider>
         <Switch>
           <Route path="/panel" component={RootPage} />
-          <Route path="/login">
-            <h1>login</h1>
-          </Route>
+          <Route path="/login" component={LoginPage}  />
           <Redirect from="/" to="/panel" />
         </Switch>
       </AppProvider>

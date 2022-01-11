@@ -7,6 +7,8 @@ import { useTranslation } from 'react-i18next'
 import Dropwdown from '../Dropdown'
 import Drawer from '../Drawer'
 import { useEffect, useState } from 'react'
+import { ROUTE } from '../../util/route'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     const { t } = useTranslation();
@@ -27,7 +29,9 @@ const Header = () => {
 
     return (
         <HeaderStyled>
-            <Image width="92" height="32" src={logo} />
+            <Link to={ROUTE.MAIN.PANEL.HREF}>
+                <Image width="92" height="32" src={logo} />
+            </Link>
             <AdminContent>
                 <Button onClick={handleClick}>{t('add product')}</Button>
                 <Drawer rotate="right" isOpen={open} setIsOpen={setOpen}>
