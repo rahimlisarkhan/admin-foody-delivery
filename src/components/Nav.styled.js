@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const NavStyled = styled.nav`
-    background-color: ${({theme})=>theme.colors.red};
+    background-color: ${({theme})=>theme.colors.darkBlue_1};
     font-size:20px;
 
     ul {
