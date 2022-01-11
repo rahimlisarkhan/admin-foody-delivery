@@ -6,11 +6,11 @@ import {
 import React, { Suspense } from 'react';
 import { Topic } from '../components/Topic';
 import { AppProvider } from "./AppProvider";
-
+import Loading from '../components/Loading/Loading';
 
 function App() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<Loading/>}>
       <AppProvider>
         <Switch>
           <Route path="/product" component={Topic} />
