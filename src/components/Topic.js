@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, Redirect, Route, Switch } from "react-router-dom"
 import { NavStyled } from "./Nav.styled";
+import Image from './Image';
+import logo from '../image/icon/ea-logo.svg'
 
 const Basket = React.lazy(() => import('./Basket'));
 const Order = React.lazy(() => import('./Order'));
@@ -11,6 +13,7 @@ export const Topic = () => {
     return (
         <div className="App">
             <header className="App-header">
+            <Image radius="100" width="100" height="100" src={logo}/>
                 <NavStyled>
                     <ul>
                         <li>
