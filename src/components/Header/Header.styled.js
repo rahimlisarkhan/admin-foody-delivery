@@ -30,13 +30,8 @@ export const AdminContent = styled.div`
 
 
 export const SubTitle = styled.span`
-${(props) => {
-        console.log(props);
-
-    }}
     text-decoration: capitalize !important;
     font-size: ${({ theme }) => theme.font.size.small};
-
 `;
 
 
