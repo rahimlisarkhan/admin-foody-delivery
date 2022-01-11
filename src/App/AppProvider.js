@@ -11,9 +11,9 @@ export const AppProvider = ({ children }) => {
         <Router>
             <ThemeProvider theme={theme}>
                 <GlobalStyle />
-                <ModalsContextProvider>
+                {/* <ModalsContextProvider> */}
                 {children}
-                </ModalsContextProvider>
+                {/* </ModalsContextProvider> */}
             </ThemeProvider >
         </Router>
     )
