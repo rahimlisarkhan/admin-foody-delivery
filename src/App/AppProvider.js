@@ -4,10 +4,7 @@ import {
 import { ThemeProvider } from "styled-components";
 import { theme } from "../style/theme";
 import ModalsContextProvider from "../providers/modalsProvider"
-
 import GlobalStyle from "../style/global";
-
-
 
 export const AppProvider = ({ children }) => {
     return (
@@ -17,7 +14,6 @@ export const AppProvider = ({ children }) => {
                 <ModalsContextProvider>
                 {children}
                 </ModalsContextProvider>
-
             </ThemeProvider >
         </Router>
     )
