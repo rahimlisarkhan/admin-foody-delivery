@@ -3,7 +3,7 @@ import {
 } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { theme } from "../style/theme";
-// import ModalsContextProvider from "../providers/modalsProvider"
+import ModalsContextProvider from "../providers/modalsProvider"
 import GlobalStyle from "../style/global";
 
 export const AppProvider = ({ children }) => {
@@ -11,9 +11,9 @@ export const AppProvider = ({ children }) => {
         <Router>
             <ThemeProvider theme={theme}>
                 <GlobalStyle />
-                {/* <ModalsContextProvider> */}
+                <ModalsContextProvider>
                 {children}
-                {/* </ModalsContextProvider> */}
+                </ModalsContextProvider>
             </ThemeProvider >
         </Router>
     )

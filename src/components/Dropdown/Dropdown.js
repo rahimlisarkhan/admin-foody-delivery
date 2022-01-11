@@ -19,7 +19,6 @@ const Dropdown = () => {
     const [selectedIndex, setSelectedIndex] = React.useState(0);
     const { i18n } = useTranslation();
 
-
     let options = React.useMemo(() => [
         { flag: flagEn, lang: 'en' },
         { flag: flagFr, lang: 'fr' },
