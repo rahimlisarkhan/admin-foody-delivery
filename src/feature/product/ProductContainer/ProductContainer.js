@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import ContentHeader from "../../../components/ContentHeader"
 import { ProductsList } from "./ProductContainer.styled";
 // import ProductCard from "../ProductCard"
-// import Paginations from "../../../components/Pagination";
+import Paginations from "../../../components/Pagination";
 
 
 export const ProductContainer = () => {
@@ -19,7 +19,7 @@ export const ProductContainer = () => {
                 <ProductCard/>
                 <ProductCard/> */}
             </ProductsList>
-            {/* <Paginations/> */}
+            <Paginations/>
         </Fragment>
     )
 }
