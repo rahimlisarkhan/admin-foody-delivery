@@ -4,7 +4,7 @@ import { HeaderStyled, AdminContent, SubTitle } from "./Header.styled"
 import Image from "../Image"
 import Button from '../Button'
 import { useTranslation } from 'react-i18next'
-// import Dropwdown from '../Dropdown'
+import Dropwdown from '../Dropdown'
 import Drawer from '../Drawer'
 import { useEffect, useState } from 'react'
 
@@ -33,7 +33,7 @@ const Header = () => {
                 <Drawer rotate="right" isOpen={open} setIsOpen={setOpen}>
                     <h1>Add Product</h1>
                 </Drawer>
-                {/* <Dropwdown /> */}
+                <Dropwdown />
                 <Image width="40" height="40" src={avatar} />
                 <SubTitle>{t('admin')}</SubTitle>
             </AdminContent>

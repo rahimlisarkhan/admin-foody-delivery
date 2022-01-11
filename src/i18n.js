@@ -18,7 +18,7 @@ i18n
       az,
     },
 
-    lng: defaultLang || "en",
+    lng:defaultLang || "en",
 
     interpolation: {
       escapeValue: false

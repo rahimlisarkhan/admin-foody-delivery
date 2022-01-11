@@ -12,7 +12,7 @@ const RootPage = () => {
             <Switch>
                 <Route exact path={ROUTE.MAIN.PANEL.CHILD.DASHBOARD.HREF} component={Basket} />
                 <Route exact path={ROUTE.MAIN.PANEL.CHILD.PRODUCTS.HREF} component={Order} />
-                <Redirect exact from={ROUTE.MAIN.HREF} to={ROUTE.MAIN.PANEL.CHILD.DASHBOARD.HREF} />
+                <Redirect exact from={ROUTE.MAIN.PANEL.HREF} to={ROUTE.MAIN.PANEL.CHILD.DASHBOARD.HREF} />
             </Switch>
         </Layout>
     )
