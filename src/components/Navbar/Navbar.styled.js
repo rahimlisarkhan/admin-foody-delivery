@@ -7,8 +7,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 
 export const ListItemContent = styled(ListItemButton)`
 margin-bottom:${({theme})=> theme.boxModel.margin.small};
-background-color:${({active})=> active === "false" && "rgba(247,247,247, 0.150)" } ;
-
+background-color:${({active})=> active === "true" && "rgba(247,247,247, 0.150) !important" } ;
 
 `
 
