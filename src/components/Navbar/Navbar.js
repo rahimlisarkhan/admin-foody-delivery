@@ -3,25 +3,26 @@ import { ListItem, ListItemContent, NavbarStyled, NavFooter, NavFooterTitle, Nav
 import List from '@mui/material/List';
 import { ROUTE } from "../../util/route";
 import { useTranslation } from 'react-i18next';
-// import { useLocation } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import Image from '../../components/Image'
 import EALogo from '../../image/icon/ea-logo.svg'
 
-const Navbar = () => {
+const Navbar = ({location}) => {
     const { t } = useTranslation('translation', { keyPrefix: 'menu' });
-    // const {pathname} = useLocation()
-    
+    let {pathname} = location
+    console.log(pathname);
+
     return (
         <NavbarStyled>
             <NavList>
                 <List>
                 <ListItem  to={"/panel/dashboard"}>
-                        <ListItemContent  >
+                        <ListItemContent active={`${pathname === "/panel/dashboard" ? false : true}`}  >
                             {ROUTE.MAIN.PANEL.CHILD.DASHBOARD.ICON}
                             {t("dashboard")}
                         </ListItemContent>
                     </ListItem>
-                   <ListItem  to={"/panel/products"}>
+                   <ListItem  to={"/panel/products"} active={`${pathname === "/panel/products" ? false : true}`} >
                         <ListItemContent  >
                             {ROUTE.MAIN.PANEL.CHILD.PRODUCTS.ICON}
                             {t("products")}
@@ -80,4 +81,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default withRouter(Navbar)

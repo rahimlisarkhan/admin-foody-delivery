@@ -6,7 +6,6 @@ const Basket = React.lazy(() => import('../components/Basket'));
 const Order = React.lazy(() => import('../components/Order'));
 
 const RootPage = () => {
-
     return (
         <Layout>
             <Switch>
