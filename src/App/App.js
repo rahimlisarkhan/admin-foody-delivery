@@ -13,11 +13,11 @@ function App() {
     <Suspense fallback={<Loading/>}>
       <AppProvider>
         <Switch>
-          <Route path="/product" component={Topic} />
+          <Route path="/panel" component={Topic} />
           <Route path="/login">
             <h1>login</h1>
           </Route>
-          <Redirect from="/" to="/product" />
+          <Redirect from="/" to="/panel" />
         </Switch>
       </AppProvider>
     </Suspense>
