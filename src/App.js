@@ -5,21 +5,22 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
-import {Topic} from './components/Topic'
+import React, { Suspense } from 'react';
+import { Topic } from './components/Topic';
 
 
 function App() {
   return (
     <Router>
-    <Switch>
-          <Route  path="/product">
-            <Topic/>
-          </Route>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Switch>
+          <Route path="/product" component={Topic} />
           <Route path="/login">
             <h1>login</h1>
           </Route>
           <Redirect from="/" to="/product" />
         </Switch>
+      </Suspense>
     </Router>
   );
 }

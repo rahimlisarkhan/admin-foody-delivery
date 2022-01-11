@@ -1,8 +1,14 @@
+import React from "react";
 import { Link, Redirect, Route, Switch } from "react-router-dom"
 
 
-export const Topic = () => {
+const Basket = React.lazy(() => import('./Basket'));
+const Order = React.lazy(() => import('./Order'));
 
+
+export const Topic = (props) => {
+
+    console.log(props);
     return (
         <div className="App">
         <header className="App-header">
@@ -24,10 +30,10 @@ export const Topic = () => {
         </nav>
             <Switch>
                 <Route exact path="/product/basket">
-                    <h3>Please select a basket.</h3>
+                    <Basket/>
                 </Route>
-                <Route path="/product/order">
-                    <h3>Please select a order.</h3>
+                <Route exact path="/product/order">
+                    <Order/>
                 </Route>
                 <Redirect from="*" to="/product/basket" />
             </Switch>
