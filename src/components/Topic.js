@@ -1,14 +1,12 @@
 import React from "react";
 import { Link, Redirect, Route, Switch } from "react-router-dom"
 
-
 const Basket = React.lazy(() => import('./Basket'));
 const Order = React.lazy(() => import('./Order'));
 
 
-export const Topic = (props) => {
+export const Topic = () => {
 
-    console.log(props);
     return (
         <div className="App">
         <header className="App-header">

@@ -11,8 +11,8 @@ import { Topic } from './components/Topic';
 
 function App() {
   return (
-    <Router>
-      <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div>Loading...</div>}>
+        <Router>
         <Switch>
           <Route path="/product" component={Topic} />
           <Route path="/login">
@@ -20,8 +20,8 @@ function App() {
           </Route>
           <Redirect from="/" to="/product" />
         </Switch>
+        </Router>
       </Suspense>
-    </Router>
   );
 }
 
