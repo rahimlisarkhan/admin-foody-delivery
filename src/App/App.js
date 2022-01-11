@@ -4,7 +4,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import React, { Suspense } from 'react';
-import { Topic } from '../components/Topic';
+import RootPage from '../pages';
 import { AppProvider } from "./AppProvider";
 import Loading from '../components/Loading/Loading';
 
@@ -13,7 +13,7 @@ function App() {
     <Suspense fallback={<Loading/>}>
       <AppProvider>
         <Switch>
-          <Route path="/panel" component={Topic} />
+          <Route path="/panel" component={RootPage} />
           <Route path="/login">
             <h1>login</h1>
           </Route>
