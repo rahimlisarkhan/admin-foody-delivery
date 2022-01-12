@@ -3,6 +3,7 @@ import { Redirect, Route, Switch } from "react-router-dom"
 import Layout from "../components/Layout";
 import { ROUTE } from "../util/route";
 
+// const Layout = React.lazy(() => import('../components/Layout'));
 const DashboardPage = React.lazy(() => import('../pages/dashboard'));
 const ProductsPage = React.lazy(() => import('../pages/products'));
 const RestaurantsPage = React.lazy(() => import('../pages/restaurants'));

@@ -8,7 +8,6 @@ import RootPage from '../pages';
 import { AppProvider } from "./AppProvider";
 import Loading from '../components/Loading/Loading';
 
-
 const LoginPage = lazy(()=>import('../pages/login'))
 
 function App() {

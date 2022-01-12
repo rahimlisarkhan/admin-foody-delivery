@@ -8,7 +8,7 @@ export const DrawerContent = ({rotate,isOpen,setIsOpen,children}) => {
             anchor={rotate}
             open={isOpen}
             onClose={()=>setIsOpen(false)}
-          >
+          > 
               {children}
           </Drawer>
   );

@@ -9,6 +9,8 @@ import Drawer from '../Drawer'
 import { useEffect, useState } from 'react'
 import { ROUTE } from '../../util/route'
 import { Link } from 'react-router-dom'
+import { Form } from '../Form/Form'
+import { FORM } from '../../util/form'
 
 const Header = () => {
     const { t } = useTranslation();
@@ -35,7 +37,7 @@ const Header = () => {
             <AdminContent>
                 <Button onClick={handleClick}>{t('add product')}</Button>
                 <Drawer rotate="right" isOpen={open} setIsOpen={setOpen}>
-                    <h1>Add Product</h1>
+                    <Form form={FORM.PRODUCTS}/>
                 </Drawer>
                 <Dropwdown />
                 <Image width="40" height="40" src={avatar} />

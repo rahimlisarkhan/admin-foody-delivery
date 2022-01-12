@@ -1,8 +1,7 @@
 import * as React from 'react';
 import Modal from '@mui/material/Modal';
-import { Button } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import { ModalBody } from './Modal.styled';
+import { ModalBody, ModalTitle,ModalSubTitle, ModalButtonGroup,ModalButtonCancel,ModalButtonAccept} from './Modal.styled';
 import { PropTypes } from 'prop-types';
 
 export const ModalContent = ({ title, subtitle, modalOpen, modalClose, modalItemDelete }) => {
@@ -26,12 +25,20 @@ export const ModalContent = ({ title, subtitle, modalOpen, modalClose, modalItem
       aria-describedby="parent-modal-description"
     >
       <ModalBody >
-        <h2 id="parent-modal-title">{title}</h2>
-        <p id="parent-modal-description">
+        <ModalTitle>
+          {title}
+        </ModalTitle>
+        <ModalSubTitle>
           {subtitle}
-        </p>
-        <Button onClick={handleClose}> {t("cancel")} </Button>
-        <Button onClick={handleDelete} > {t("delete")} </Button>
+        </ModalSubTitle>
+        <ModalButtonGroup>
+          <ModalButtonCancel onClick={handleClose}>
+          {t("cancel")} 
+          </ModalButtonCancel>
+          <ModalButtonAccept onClick={handleDelete} >
+          {t("delete")}
+          </ModalButtonAccept>
+        </ModalButtonGroup>
       </ModalBody>
     </Modal>
   );

@@ -9,10 +9,12 @@ export const colors = {
     lightGray:"#5A5B70",
     grayText:"#C7C7C7",
     grayText1:"#828282",
+    grayText2:"#4F4F4F",
     white:"#FFFFFF",
     whiteLight:"#F2F2F2",
     textBlack:"#1E1E30",
     textGreenLight:"#00B2A9",
     lightRed:"#EB5757",
+    mainRed:"#D63626",
     lightPink:"#EC5CF8"
 }
