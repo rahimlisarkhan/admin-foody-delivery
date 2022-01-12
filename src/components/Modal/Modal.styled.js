@@ -18,4 +18,4 @@ export const ModalBody = styled(Box)`
   border-radius: 4px;
 `
 
-export const ModalTitle = styled()
+// export const ModalTitle = styled()
