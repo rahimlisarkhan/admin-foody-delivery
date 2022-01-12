@@ -17,3 +17,5 @@ export const ModalBody = styled(Box)`
   padding: 10px 20px;
   border-radius: 4px;
 `
+
+export const ModalTitle = styled()
