@@ -3,6 +3,7 @@
     "Welcome to React": "Welcome to React and react-i18next",
     "add product": "add product",
     "add restaurant": "add restaurant",
+    "create product": "create",
     "add category": "add category",
     "title delete":"Are you sure it’s deleted ?",
     "subtitle product delete":"Attention! If you delete this product, it will not come back...?",
@@ -18,6 +19,22 @@
       "orders": "Orders",
       "offers": "Offers",
       "logout": "Logout"
+    },
+    "form":{
+      "upload title":"Upload your image",
+      "form title":"Add your description and necessary information",
+      "name":"Name",
+      "title":"Title",
+      "cuisine":"Cuisine",
+      "description":"Description",
+      "price":"Price $",
+      "delivery price":"Delivery Price $",
+      "delivery minute":"Delivery Minute",
+      "address":"Address",
+      "category":"Category",
+      "restaurants":"Restuarants",
+      "slug":"Slug",
+      "upload":"Upload"
     }
   }
 }

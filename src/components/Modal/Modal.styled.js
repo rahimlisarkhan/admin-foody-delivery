@@ -19,7 +19,7 @@ export const ModalBody = styled(Box)`
 `
 
 export const ModalTitle = styled(Typography).attrs(()=>({
-  variant:"h4"    
+  variant:"h5"    
 
 }))`
   ${({theme})=>css`
@@ -34,7 +34,7 @@ export const ModalSubTitle = styled(Typography).attrs(()=>({
   
 }))`
  ${({theme})=>css`
-      width: 60%;
+      width: 70%;
       color:${theme.colors.grayText2};
       font-weight: 400;
       margin:${theme.boxModel.margin.small} 0;

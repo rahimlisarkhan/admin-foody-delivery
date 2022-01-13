@@ -2,6 +2,7 @@
   "translation": {
     "Welcome to React": "Bienvenue à React et react-i18next",
     "add product": "ajouter produit",
+    "create": "créer",
     "add restaurant": "ajouter restaurant",
     "add category": "ajouter catégorie",
     "add offer": "add offre",
@@ -18,6 +19,22 @@
       "orders": "Commandes",
       "offers": "Offres",
       "logout": "Déconnexion"
+    },
+    "form":{
+      "upload title":"Téléchargez votre image",
+      "form title":"Ajoutez votre description et les informations nécessaires",
+      "name" :"Nom",
+      "title":"Titre",
+      "cuisine":"Cuisine",
+      "description":"Description",
+      "price":"Prix $",
+      "delivery price":"Prix de livraison $",
+      "delivery minuten":"Minutes de livraison",
+      "address":"adresse",
+      "category":"Catégorie",
+      "restaurants":"Restaurants",
+      "slug":"limace",
+      "upload": "Télécharger"
     }
 
   }

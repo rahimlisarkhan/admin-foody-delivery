@@ -4,6 +4,7 @@
     "add product": "məhsul əlavə et",
     "add restaurant": "restoran əlavə et",
     "add category": "kateqoriya əlavə et",
+    "create": "yarat",
     "add offer": "təklif əlavə et",
     "title delete": "Silindiyinizə əminsinizmi?",
     "subtitle product delete": "Diqqət! Bu məhsulu silsəniz, geri qayıtmayacaq!",
@@ -18,6 +19,22 @@
       "orders": "Sifarişlər",
       "offers": "Təkliflər",
       "logout": "Çıxış"
+    },
+    "form":{
+      "upload title":"Şəkilinizi yükləyin",
+      "form title":"Təsvirinizi və lazımi məlumatları əlavə edin",
+      "name":"Ad",
+      "title":"Başlıq",
+      "cuisine":"Mətbəx",
+      "description":"Təsvir",
+      "price":"Qiymət $",
+      "delivery price":"Çatdırılma qiyməti $",
+      "delivery minute":"Çatdırılma dəqiqəsi",
+      "address":"Ünvan",
+      "category":"Kateqoriya",
+      "restaurants":"Restoranlar",
+      "slug":"İlçək",
+      "upload":"Yüklə"
     }
   }
 }

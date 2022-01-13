@@ -12,9 +12,11 @@ import { Link } from 'react-router-dom'
 import { Form } from '../Form/Form'
 import { FORM } from '../../util/form'
 
+
 const Header = () => {
     const { t } = useTranslation();
     let [open, setOpen] = useState(false);
+    const options = [{id:"001",name:"Mc Donald's"},{id:"002",name:"Papa John's"},{id:"003",name:'Burger King'}];
 
     useEffect(()=>{
         // console.log("isledi");
@@ -26,7 +28,7 @@ const Header = () => {
     },[])
 
     const handleClick = () => {
-        setOpen(true)
+        setOpen(!open)
     }
 
     return (
@@ -36,8 +38,10 @@ const Header = () => {
             </Link>
             <AdminContent>
                 <Button onClick={handleClick}>{t('add product')}</Button>
-                <Drawer rotate="right" isOpen={open} setIsOpen={setOpen}>
-                    <Form form={FORM.PRODUCTS}/>
+                <Drawer rotate="right" isOpen={open} setIsOpen={handleClick}>
+                    <Form form={FORM.PRODUCTS} 
+                          selectOptions={options} 
+                          setIsClose={handleClick}/>
                 </Drawer>
                 <Dropwdown />
                 <Image width="40" height="40" src={avatar} />

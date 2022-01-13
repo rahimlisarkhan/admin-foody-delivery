@@ -20,13 +20,13 @@ export const ContentHeaderRow = styled(Grid).attrs(()=>({
 
 export const ContentHeaderTitleArea = styled(Grid).attrs(()=>({
     item :true,
-    md:7 
+    md:6 
 }))`
     
 `
 export const ContentHeaderButtonsArea = styled(Grid).attrs(()=>({
     item :true,
-    md:5
+    md:6
 }))`
     display: flex;
     justify-content: flex-end;

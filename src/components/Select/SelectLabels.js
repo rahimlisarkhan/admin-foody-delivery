@@ -3,20 +3,19 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 import Grow from '@mui/material/Grow';
 import Paper from '@mui/material/Paper';
-import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
-import { ArrowBottom ,ButtonStyled} from './Select.styled';
+import { ArrowBottom, ButtonStyled, PopperStyled } from './Select.styled';
 
-const options = ['Fast Food', 'Squash and merge', 'Rebase and merge'];
 
-export const SelectLabels =()=> {
+export const SelectLabels = ({ selectKey, setValue, options, width, poper }) => {
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
   const [selectedIndex, setSelectedIndex] = React.useState(0);
 
   const handleMenuItemClick = (event, index) => {
     setSelectedIndex(index);
+    setValue && setValue(selectKey ? selectKey : "select", options[selectedIndex].id)
     setOpen(false);
   };
 
@@ -33,20 +32,20 @@ export const SelectLabels =()=> {
 
   return (
     <React.Fragment>
-      <ButtonGroup  ref={anchorRef} >
+      <ButtonGroup ref={anchorRef} >
         <ButtonStyled
           variant="contained"
           onClick={handleToggle}
+          width={width}
         >
-          {options[selectedIndex]}
+          {options && options[selectedIndex].name}
           <ArrowBottom />
         </ButtonStyled>
       </ButtonGroup>
-      <Popper
+      <PopperStyled
         open={open}
+        poper={poper}
         anchorEl={anchorRef.current}
-        role={undefined}
-        transition
       >
         {({ TransitionProps, placement }) => (
           <Grow
@@ -59,13 +58,13 @@ export const SelectLabels =()=> {
             <Paper>
               <ClickAwayListener onClickAway={handleClose}>
                 <MenuList id="split-button-menu">
-                  {options.map((option, index) => (
+                  {options?.map((option, index) => (
                     <MenuItem
-                      key={option}
+                      key={option.id}
                       selected={index === selectedIndex}
                       onClick={(event) => handleMenuItemClick(event, index)}
                     >
-                      {option}
+                      {option.name}
                     </MenuItem>
                   ))}
                 </MenuList>
@@ -73,7 +72,7 @@ export const SelectLabels =()=> {
             </Paper>
           </Grow>
         )}
-      </Popper>
+      </PopperStyled>
     </React.Fragment>
   );
 }
