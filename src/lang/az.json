@@ -8,6 +8,10 @@
     "add offer": "təklif əlavə et",
     "title delete": "Silindiyinizə əminsinizmi?",
     "subtitle product delete": "Diqqət! Bu məhsulu silsəniz, geri qayıtmayacaq!",
+    "subtitle restaurants delete": "Diqqət! Bu restoranı silsəniz, geri qayıtmayacaq!",
+    "subtitle order delete": "Diqqət! Bu sifarişi silsəniz, geri qayıtmayacaq!",
+    "subtitle offer delete": "Diqqət! Bu təklifi silsəniz, geri qayıtmayacaq!",
+    "subtitle category delete": "Diqqət! Bu kateqoriyanı silsəniz, geri qayıtmayacaq!",
     "delete": "sil",
     "cancel": "ləğv et",
     "admin": "Admin",
@@ -33,7 +37,7 @@
       "address":"Ünvan",
       "category":"Kateqoriya",
       "restaurants":"Restoranlar",
-      "slug":"İlçək",
+      "slug":"Link başlığı (fast-food)",
       "upload":"Yüklə"
     }
   }

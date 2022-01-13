@@ -16,17 +16,21 @@ export const RestaurantsContainer = () => {
     const translate = useTranslation();
 
     const options = [{id:"001",name:'Fast Food'},{id:"002",name:'Pizza'},{id:"003",name:'Kebab'}];
-
+    const handleSubmit = (form) =>{
+        console.log(form);
+    }
     const handleClick = () => {
         setOpen(!open)
     }
+    
     return(
         <Fragment>
             <ContentHeader title={t('restaurants')}>
              <SelectLabels width="200" poper="200" options={options}/>
              <Button onClick={handleClick}>{translate.t('add restaurant')}</Button>
                 <Drawer rotate="right" isOpen={open} setIsOpen={setOpen}>
-                    <Form form={FORM.RESTAURANT} 
+                    <Form form={FORM.RESTAURANT}
+                          setForm={handleSubmit} 
                           selectOptions={options} 
                           setIsClose={handleClick}/>
                 </Drawer>

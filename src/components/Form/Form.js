@@ -5,16 +5,18 @@ import InputFile from "../InputFile"
 import SelectLabels from "../Select";
 import { useState } from "react";
 import Image from "../Image"
+import PropTypes from "prop-types"
 
-export const Form = ({ selectOptions, setIsClose, form: { title, initialValues, inputs } }) => {
+export const Form = ({ selectOptions, setIsClose,setForm, form: { title, initialValues, inputs } }) => {
 
     const translate = useTranslation();
     const { t } = useTranslation('translation', { keyPrefix: 'form' });
     const [uploadImg, setUploadImg] = useState(null)
 
     const onSubmit = (values, { resetForm }) => {
-        console.log(values);
+        setForm(values)
         resetForm()
+        setUploadImg(null)
     }
 
     return (
@@ -38,7 +40,7 @@ export const Form = ({ selectOptions, setIsClose, form: { title, initialValues, 
                             <Styled.FormSubTitle>
                                 {t("form title")}
                             </Styled.FormSubTitle>
-                            <Styled.FormContent height={300}>
+                            <Styled.FormContent height={310}>
                                 {inputs?.map(field => {
                                     switch (field.type) {
                                         case "text":
@@ -76,6 +78,7 @@ export const Form = ({ selectOptions, setIsClose, form: { title, initialValues, 
                                                     </Styled.FormLabel>
                                                     <SelectLabels poper="350"
                                                         selectKey={field.name}
+                                                        height={46}
                                                         setValue={setFieldValue}
                                                         options={selectOptions} />
                                                 </Styled.FormFieldGroup>
@@ -105,3 +108,14 @@ export const Form = ({ selectOptions, setIsClose, form: { title, initialValues, 
     )
 }
 
+
+Form.prototype = {
+    selectOptions: PropTypes.array,
+    setIsClose: PropTypes.func.isRequired,
+    setForm: PropTypes.func.isRequired,
+    form: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        initialValues: PropTypes.object.isRequired,
+        inputs:PropTypes.array.isRequired
+      }),
+}

@@ -1,9 +1,12 @@
 import { useMemo } from 'react'
 import Table from '../../../components/Table'
+import { useModalSetting } from '../../../hooks/useModalSetting'
 
 
 
 export const OrderTable = () => {
+    const {setOpenOrderModal,setDeleteOrderModalID } = useModalSetting()
+
     const rows = useMemo(()=> [
         { id: "001",  
           customer_id: "022401", 
@@ -75,7 +78,8 @@ export const OrderTable = () => {
     ],[])
 
     const deleteItem = (id)=> {
-        console.log(id);
+        setOpenOrderModal(true)
+        setDeleteOrderModalID(id)
     }
     
     return (

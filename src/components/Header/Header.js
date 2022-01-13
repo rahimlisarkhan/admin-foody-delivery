@@ -6,7 +6,7 @@ import Button from '../Button'
 import { useTranslation } from 'react-i18next'
 import Dropwdown from '../Dropdown'
 import Drawer from '../Drawer'
-import { useEffect, useState } from 'react'
+import {useState } from 'react'
 import { ROUTE } from '../../util/route'
 import { Link } from 'react-router-dom'
 import { Form } from '../Form/Form'
@@ -18,14 +18,10 @@ const Header = () => {
     let [open, setOpen] = useState(false);
     const options = [{id:"001",name:"Mc Donald's"},{id:"002",name:"Papa John's"},{id:"003",name:'Burger King'}];
 
-    useEffect(()=>{
-        // console.log("isledi");
-        
-        return ()=>{
-            // console.log("Cixis eledi");
-        }
-        
-    },[])
+
+    const handleSubmit = (form) =>{
+        console.log(form);
+    }
 
     const handleClick = () => {
         setOpen(!open)
@@ -39,7 +35,8 @@ const Header = () => {
             <AdminContent>
                 <Button onClick={handleClick}>{t('add product')}</Button>
                 <Drawer rotate="right" isOpen={open} setIsOpen={handleClick}>
-                    <Form form={FORM.PRODUCTS} 
+                    <Form form={FORM.PRODUCTS}
+                          setForm={handleSubmit} 
                           selectOptions={options} 
                           setIsClose={handleClick}/>
                 </Drawer>

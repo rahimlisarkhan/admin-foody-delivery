@@ -18,6 +18,7 @@ export const ButtonStyled = styled(Button).attrs(() => ({
     background-color: ${({ theme }) => theme.colors.darkBlue_4} !important;
     border-radius: 14px;
     width: ${({ width }) => width ? `${width}px` : "100%"};
+    height: ${({ height }) => height ? `${height}px` : "auto"};
     display: flex;
     justify-content: space-between;
     position: relative;

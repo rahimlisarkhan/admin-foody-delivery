@@ -8,7 +8,7 @@ import MenuList from '@mui/material/MenuList';
 import { ArrowBottom, ButtonStyled, PopperStyled } from './Select.styled';
 
 
-export const SelectLabels = ({ selectKey, setValue, options, width, poper }) => {
+export const SelectLabels = ({ selectKey, setValue, options, width, height, poper }) => {
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
   const [selectedIndex, setSelectedIndex] = React.useState(0);
@@ -36,6 +36,7 @@ export const SelectLabels = ({ selectKey, setValue, options, width, poper }) => 
         <ButtonStyled
           variant="contained"
           onClick={handleToggle}
+          height={height}
           width={width}
         >
           {options && options[selectedIndex].name}

@@ -1,9 +1,10 @@
 
 import React from 'react';
+import DashboardContainer from '../../feature/dashbaord/DashboardContainer';
 
 const DashboardPage = () => {
     return (
-            <h1>Test Dashboard</h1>
+            <DashboardContainer/>
     )
 }
 

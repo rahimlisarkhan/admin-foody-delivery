@@ -24,7 +24,7 @@ ${({ theme }) => css`
 `
 
 export const FormTitle = styled(Typography).attrs(() => ({
-    variant: "h4"
+    variant: "h5"
 }))`
     text-transform: capitalize;
 `

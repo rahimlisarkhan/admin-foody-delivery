@@ -1,5 +1,4 @@
 
-
 export const FORM = {
     PRODUCTS:{
         title:"add product",
@@ -73,10 +72,61 @@ export const FORM = {
             },
             {   
                 id:"005",
+                label:"address",
+                name:"address",
+                type:"text"
+            },
+            {   
+                id:"006",
                 label:"category",
                 name:"category",
                 type:"select"
             },
+          
+        ]
+    },
+    CATEGORY:{
+        title:"add category",
+        initialValues:{
+            name:"",
+            slug:""
+        },
+        inputs:[
+            {   
+                id:"001",
+                label:"name",
+                name:"name",
+                type:"text"
+            },
+            {   
+                id:"002",
+                label:"slug",
+                name:"slug",
+                type:"text"
+            },
+           
+        ]
+    },
+    OFFER:{
+        title:"add offer",
+        initialValues:{
+            title:"",
+            description:""
+        },
+        inputs:[
+            {   
+                id:"001",
+                label:"title",
+                name:"title",
+                type:"text"
+            },
+            {   
+                id:"002",
+                label:"description",
+                name:"description",
+                type:"textarea"
+            },
+           
         ]
     }
 }

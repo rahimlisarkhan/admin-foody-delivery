@@ -4,6 +4,8 @@ import ContentHeader from "../../../components/ContentHeader"
 import Button from '../../../components/Button'
 import Drawer from '../../../components/Drawer'
 import CategoryTable from "../CategoryTable";
+import { Form } from "../../../components/Form/Form"
+import { FORM } from "../../../util/form"
 
 
 
@@ -14,16 +16,21 @@ export const CategoryContainer = () => {
     const { t } = useTranslation('translation', { keyPrefix: 'menu' });
     const translate = useTranslation();
   
+    const handleSubmit = (form) =>{
+        console.log(form);
+    }
 
     const handleClick = () => {
-        setOpen(true)
+        setOpen(!open)
     }
     return(
         <Fragment>
             <ContentHeader title={t('category')}>
             <Button onClick={handleClick}>{translate.t('add category')}</Button>
                 <Drawer rotate="right" isOpen={open} setIsOpen={setOpen}>
-                    <h1>Add Category </h1>
+                    <Form form={FORM.CATEGORY} 
+                          setForm={handleSubmit}
+                          setIsClose={handleClick}/>
                 </Drawer>
             </ContentHeader>
             <CategoryTable/>

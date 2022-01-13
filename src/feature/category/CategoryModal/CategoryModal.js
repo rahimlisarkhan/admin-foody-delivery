@@ -3,18 +3,17 @@ import ModalContent from "../../../components/Modal"
 import { useModalSetting } from "../../../hooks/useModalSetting"
 
 
-
 export const CategoryModal = () => {
 
     const {t} = useTranslation()
-    const {openProductModal,setOpenProductModal, deleteItemModal } = useModalSetting()
+    const {openCategoryModal,setOpenCategoryModal, deleteCategoryModal } = useModalSetting()
 
     return (
         <ModalContent title={t("title delete")} 
-                      subtitle={t("subtitle product delete")}
-                      modalOpen={openProductModal}
-                      modalClose={setOpenProductModal}
-                      modalItemDelete={deleteItemModal}
+                      subtitle={t("subtitle category delete")}
+                      modalOpen={openCategoryModal}
+                      modalClose={setOpenCategoryModal}
+                      modalItemDelete={deleteCategoryModal}
                       />
     )
 }
