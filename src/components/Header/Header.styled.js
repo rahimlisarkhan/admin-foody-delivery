@@ -18,7 +18,8 @@ export const HeaderStyled = styled.header`
     top:0;
     left:22px;
     height: 64px;
-    border-radius:0 0 10px 10px
+    border-radius:0 0 10px 10px;
+    z-index:1000;
 `;
 
 

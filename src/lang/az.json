@@ -15,6 +15,7 @@
     "delete": "sil",
     "cancel": "ləğv et",
     "admin": "Admin",
+    "no risk":"Heç bir risk təyin edilməyib.",
     "menu": {
       "dashboard": "İdarə paneli",
       "products": "Məhsulllar",

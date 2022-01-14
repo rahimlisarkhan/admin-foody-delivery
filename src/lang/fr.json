@@ -15,6 +15,7 @@
     "delete": "supprimer",
     "cancel": "annuler",
     "admin": "Administrateur",
+    "no risk":"Il n'y a aucun risque assigné.",
     "menu": {
       "dashboard": "Tableau de bord",
       "products": "Produits",
