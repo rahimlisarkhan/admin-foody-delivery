@@ -1,0 +1,45 @@
+{
+    "products":[
+        {   
+            "id":"0006",
+            "name":"Adana Kebab",
+            "desc":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+            "price":7.90,
+            "restaurant":"Anadolu Restaurant",
+            "img_url":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Adana_kebab.jpg/800px-Adana_kebab.jpg"
+        },
+        {   
+            "id":"0007",
+            "name":"Steak",
+            "desc":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+            "price":165.90,
+            "restaurant":"Nusret",
+            "img_url":"https://images.otstatic.com/prod1/42341288/2/large.jpg"
+        },
+        {   
+            "id":"0008",
+            "name":"Cola",
+            "desc":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+            "price":1.90,
+            "restaurant":"KFC",
+            "img_url":"https://s3-eu-west-1.amazonaws.com/straus/media/products2/ef6df17b659e475a9f3cfa3a33289490.png"
+        },
+        {   
+            "id":"0009",
+            "name":"Nuggets",
+            "desc":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+            "price":2.90,
+            "restaurant":"MC Donald's",
+            "img_url":"https://i.redd.it/d6zmwn0svdj51.jpg"
+        },
+        {   
+            "id":"0010",
+            "name":"Twister",
+            "desc":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+            "price":4.90,
+            "restaurant":"KFC",
+            "img_url":"https://buy.am/media/image/22/72/fb/Twister-KFC.jpg"
+        }
+    ]
+    
+}

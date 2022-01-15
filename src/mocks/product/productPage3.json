@@ -1,0 +1,45 @@
+{
+    "products":[
+        {   
+            "id":"0011",
+            "name":"Sushi",
+            "desc":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+            "price":12.90,
+            "restaurant":"China Restaurant",
+            "img_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvYkJtscD2kVRNUe1vv-K1HXgiVrvdVRZtjg&usqp=CAU"
+        },
+        {   
+            "id":"0012",
+            "name":"Tomato Soup",
+            "desc":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+            "price":5.90,
+            "restaurant":"Paul",
+            "img_url":"https://atlas-content-cdn.pixelsquid.com/stock-images/tomato-soup-nrdKBE1-600.jpg"
+        },
+        {   
+            "id":"0013",
+            "name":"Orange Juice",
+            "desc":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+            "price":1.90,
+            "restaurant":"Mc Donald's",
+            "img_url":"https://i.pinimg.com/originals/f3/bb/34/f3bb3417e4cc19247e793a32c9f9d392.png"
+        },
+        {   
+            "id":"0014",
+            "name":"Berlin Doner",
+            "desc":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+            "price":2.90,
+            "restaurant":"Nusret",
+            "img_url":"https://www.pngkey.com/png/detail/138-1382140_doner-kebab-png.png"
+        },
+        {   
+            "id":"0015",
+            "name":"Royal Cizburger",
+            "desc":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+            "price":7.90,
+            "restaurant":"Mc Donald's",
+            "img_url":"https://mcdonalds.az/images/db0deaad634bd12867d97f6fc73f1649.jpg"
+        }
+    ]
+    
+}

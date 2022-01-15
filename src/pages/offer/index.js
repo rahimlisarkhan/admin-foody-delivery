@@ -1,4 +1,4 @@
-import OfferContainer from "../../feature/offer/OfferContainer"
+import OfferContainer from "../../features/offer/OfferContainer"
 
 
 const OfferPage = () => {

@@ -1,4 +1,4 @@
-import LoginContainer from "../../feature/login/LoginContainer"
+import LoginContainer from "../../features/login/LoginContainer"
 
 
 const Login = () => {

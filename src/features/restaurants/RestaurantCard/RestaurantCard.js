@@ -4,22 +4,22 @@ import TypographyText from '../../../components/Typograph'
 import IconDelete from '../../../components/Icons/Delete';
 import { useModalSetting } from "../../../hooks/useModalSetting";
 
-export const RestaurantsCard = () => {
+export const RestaurantsCard = ({item:{id,name,category,img_url}}) => {
   const {setOpenRestaurantModal,setDeleteRestaurantModalID } = useModalSetting()
   
   const handleDelete = () => {
     setOpenRestaurantModal(true)
-    setDeleteRestaurantModalID("004")
+    setDeleteRestaurantModalID(id)
   }
     return (
         <Card>
-            <Image cover width="65" height="65" src="https://www.trusselltrust.org/wp-content/uploads/sites/2/2020/07/papa-johns-logo@2x.png" />
+            <Image cover width="65" height="65" src={img_url} />
             <CardTitleContent>
                 <TypographyText font="18" color="dark">
-                    Papa John’s
+                    {name}
                 </TypographyText >
                 <TypographyText font="14" color="gray">
-                    Pizza
+                    {category}
                 </TypographyText >
             </CardTitleContent>
             <ButtonDelete onClick={handleDelete}>

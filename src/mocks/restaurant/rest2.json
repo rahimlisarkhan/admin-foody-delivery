@@ -1,0 +1,126 @@
+{
+    "restaurants":[
+        {   
+            "id":"0013",
+            "name":"KFC",
+            "cuisine":"pizza dring roll",
+            "delivery_price":2,
+            "delivery_minute":4,
+            "category":"pizza",
+            "address":"Ganclik 45 Baku Azerbaijan",
+            "img_url":"https://upload.wikimedia.org/wikipedia/sco/thumb/b/bf/KFC_logo.svg/1200px-KFC_logo.svg.png"
+        },
+        {   
+            "id":"0014",
+            "name":"Starbucks",
+            "cuisine":"pizza dring roll",
+            "delivery_price":null,
+            "delivery_minute":2,
+            "category":"coffee",
+            "address":"Narimanov 45 Baku Azerbaijan",
+            "img_url":"https://logos-world.net/wp-content/uploads/2020/09/Starbucks-Logo.png"
+        },
+        {   
+            "id":"0015",
+            "name":"KFC",
+            "cuisine":"pizza dring roll",
+            "delivery_price":2,
+            "delivery_minute":4,
+            "category":"pizza",
+            "address":"Ganclik 45 Baku Azerbaijan",
+            "img_url":"https://upload.wikimedia.org/wikipedia/sco/thumb/b/bf/KFC_logo.svg/1200px-KFC_logo.svg.png"
+        },
+        {   
+            "id":"0016",
+            "name":"Starbucks",
+            "cuisine":"pizza dring roll",
+            "delivery_price":null,
+            "delivery_minute":2,
+            "category":"coffee",
+            "address":"Narimanov 45 Baku Azerbaijan",
+            "img_url":"https://logos-world.net/wp-content/uploads/2020/09/Starbucks-Logo.png"
+        },
+        {   
+            "id":"0017",
+            "name":"KFC",
+            "cuisine":"pizza dring roll",
+            "delivery_price":2,
+            "delivery_minute":4,
+            "category":"pizza",
+            "address":"Ganclik 45 Baku Azerbaijan",
+            "img_url":"https://upload.wikimedia.org/wikipedia/sco/thumb/b/bf/KFC_logo.svg/1200px-KFC_logo.svg.png"
+        },
+        {   
+            "id":"0018",
+            "name":"Starbucks",
+            "cuisine":"pizza dring roll",
+            "delivery_price":null,
+            "delivery_minute":2,
+            "category":"coffee",
+            "address":"Narimanov 45 Baku Azerbaijan",
+            "img_url":"https://logos-world.net/wp-content/uploads/2020/09/Starbucks-Logo.png"
+        },
+        {   
+            "id":"0019",
+            "name":"KFC",
+            "cuisine":"pizza dring roll",
+            "delivery_price":2,
+            "delivery_minute":4,
+            "category":"pizza",
+            "address":"Ganclik 45 Baku Azerbaijan",
+            "img_url":"https://upload.wikimedia.org/wikipedia/sco/thumb/b/bf/KFC_logo.svg/1200px-KFC_logo.svg.png"
+        },
+        {   
+            "id":"0020",
+            "name":"Starbucks",
+            "cuisine":"pizza dring roll",
+            "delivery_price":null,
+            "delivery_minute":2,
+            "category":"coffee",
+            "address":"Narimanov 45 Baku Azerbaijan",
+            "img_url":"https://logos-world.net/wp-content/uploads/2020/09/Starbucks-Logo.png"
+        },
+        {   
+            "id":"0021",
+            "name":"KFC",
+            "cuisine":"pizza dring roll",
+            "delivery_price":2,
+            "delivery_minute":4,
+            "category":"pizza",
+            "address":"Ganclik 45 Baku Azerbaijan",
+            "img_url":"https://upload.wikimedia.org/wikipedia/sco/thumb/b/bf/KFC_logo.svg/1200px-KFC_logo.svg.png"
+        },
+        {   
+            "id":"0022",
+            "name":"Starbucks",
+            "cuisine":"pizza dring roll",
+            "delivery_price":null,
+            "delivery_minute":2,
+            "category":"coffee",
+            "address":"Narimanov 45 Baku Azerbaijan",
+            "img_url":"https://logos-world.net/wp-content/uploads/2020/09/Starbucks-Logo.png"
+        },
+        {   
+            "id":"0023",
+            "name":"KFC",
+            "cuisine":"pizza dring roll",
+            "delivery_price":2,
+            "delivery_minute":4,
+            "category":"pizza",
+            "address":"Ganclik 45 Baku Azerbaijan",
+            "img_url":"https://upload.wikimedia.org/wikipedia/sco/thumb/b/bf/KFC_logo.svg/1200px-KFC_logo.svg.png"
+        },
+        {   
+            "id":"0024",
+            "name":"Starbucks",
+            "cuisine":"pizza dring roll",
+            "delivery_price":null,
+            "delivery_minute":2,
+            "category":"coffee",
+            "address":"Narimanov 45 Baku Azerbaijan",
+            "img_url":"https://logos-world.net/wp-content/uploads/2020/09/Starbucks-Logo.png"
+        }
+      
+    ]
+    
+}

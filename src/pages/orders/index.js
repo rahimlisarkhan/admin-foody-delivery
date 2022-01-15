@@ -1,4 +1,4 @@
-import OrderContainer from "../../feature/orders/OrderContainer"
+import OrderContainer from "../../features/orders/OrderContainer"
 
 const OrdersPage = () => {
 

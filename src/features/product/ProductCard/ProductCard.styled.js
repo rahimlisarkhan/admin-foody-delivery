@@ -32,11 +32,11 @@ background-color: ${({theme})=>theme.colors.white};
 
 export const CardImage = styled(CardMedia).attrs(()=>({
     component:"img",
-    width:"160",
     height:"160"
 }))`
-    width: auto;
+    width: 160px;
     margin:15px;
+    object-fit:cover
 `
 
 

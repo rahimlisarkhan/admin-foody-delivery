@@ -15,7 +15,7 @@ export const SelectLabels = ({ selectKey, setValue, options, width, height, pope
 
   const handleMenuItemClick = (event, index) => {
     setSelectedIndex(index);
-    setValue && setValue(selectKey ? selectKey : "select", options[selectedIndex].id)
+    setValue && setValue(selectKey ? selectKey : "select", options[selectedIndex].name)
     setOpen(false);
   };
 

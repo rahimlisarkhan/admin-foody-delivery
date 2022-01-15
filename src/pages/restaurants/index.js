@@ -1,4 +1,4 @@
-import RestaurantsContainer from "../../feature/restaurants/RestaurantsContainer"
+import RestaurantsContainer from "../../features/restaurants/RestaurantsContainer"
 
 const Restaurants = () => {
 

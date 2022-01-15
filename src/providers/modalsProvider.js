@@ -1,12 +1,19 @@
 import React, { useState, createContext } from 'react';
-import OfferModal from '../feature/offer/OfferModal';
-import OrderModal from '../feature/orders/OrderModal';
-import ProductModal from '../feature/product/ProductModal';
-import CategoryModal from '../feature/category/CategoryModal';
-import RestaurantModal from '../feature/restaurants/RestaurantModal';
+import OfferModal from '../features/offer/OfferModal';
+import OrderModal from '../features/orders/OrderModal';
+import ProductModal from '../features/product/ProductModal';
+import CategoryModal from '../features/category/CategoryModal';
+import RestaurantModal from '../features/restaurants/RestaurantModal';
+import { removeProduct } from '../services/Products';
+import { deleteProduct } from '../store/slices/product/productSlice'
+import { useDispatch } from 'react-redux';
+import { removeRestaurants } from '../services/Restaurants';
+import { deleteRestaurant } from '../store/slices/restaurant/restaurantSlice';
 export const ModalsContext = createContext();
 
 const ModalsContextProvider = ({ children }) => {
+
+    const dispatch = useDispatch()
 
     const [openProductModal, setOpenProductModal] = useState(false);
     const [deleteProductModalID, setDeleteProductModalID] = useState("");
@@ -34,14 +41,21 @@ const ModalsContextProvider = ({ children }) => {
         console.log("category", deleteCategoryModalID);
     }
 
-    const deleteRestaurantModal = () => {
+    const deleteRestaurantModal = async () => {
         setOpenRestaurantModal(true)
         console.log("rest", deleteRestaurantModalID);
+        const res = await removeRestaurants(deleteRestaurantModalID)
+        if (res?.status === 204) {
+            dispatch(deleteRestaurant(deleteRestaurantModalID))
+        }
     }
 
-    const deleteItemModal = () => {
+    const deleteItemModal = async () => {
         setOpenProductModal(true)
-        console.log("product", deleteProductModalID);
+        const res = await removeProduct(deleteProductModalID)
+        if (res?.status === 204) {
+            dispatch(deleteProduct(deleteProductModalID))
+        }
     }
 
     const value = {

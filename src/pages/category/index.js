@@ -1,4 +1,4 @@
-import CategoryContainer from "../../feature/category/CategoryContainer"
+import CategoryContainer from "../../features/category/CategoryContainer"
 
 const CategoryPage = () => {
 

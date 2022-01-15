@@ -13,6 +13,7 @@ const LoginPage = lazy(()=>import('../pages/login'));
 // const NotFound = <h1>Not found 404</h1>
 
 function App() {
+
   return (
     <Suspense fallback={<Loading/>}>
       <AppProvider>

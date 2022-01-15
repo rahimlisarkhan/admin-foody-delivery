@@ -62,7 +62,7 @@ const Navbar = ({ location }) => {
 
             <NavFooter>
                 <Image width="170" height="100" src={EALogo} />
-                <NavFooterTitle >Version: 1.0. 2022</NavFooterTitle>
+                <NavFooterTitle >Version: 3.2. 2022</NavFooterTitle>
             </NavFooter>
         </NavbarStyled>
     )

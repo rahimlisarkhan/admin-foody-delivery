@@ -1,0 +1,126 @@
+{
+    "restaurants":[
+        {   
+            "id":"0001",
+            "name":"Papa John's",
+            "cuisine":"pizza dring roll",
+            "delivery_price":2,
+            "delivery_minute":4,
+            "category":"pizza",
+            "address":"Ganclik 45 Baku Azerbaijan",
+            "img_url":"https://media-cdn.tripadvisor.com/media/photo-s/1a/fe/be/14/papa-john-s-azerbaijan.jpg"
+        },
+        {   
+            "id":"0002",
+            "name":"Mc donald's",
+            "cuisine":"pizza dring roll",
+            "delivery_price":null,
+            "delivery_minute":2,
+            "category":"fast food",
+            "address":"Narimanov 45 Baku Azerbaijan",
+            "img_url":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/2339px-McDonald%27s_Golden_Arches.svg.png"
+        },
+        {   
+            "id":"0003",
+            "name":"Papa John's",
+            "cuisine":"pizza dring roll",
+            "delivery_price":2,
+            "delivery_minute":4,
+            "category":"pizza",
+            "address":"Ganclik 45 Baku Azerbaijan",
+            "img_url":"https://media-cdn.tripadvisor.com/media/photo-s/1a/fe/be/14/papa-john-s-azerbaijan.jpg"
+        },
+        {   
+            "id":"0004",
+            "name":"Mc donald's",
+            "cuisine":"pizza dring roll",
+            "delivery_price":null,
+            "delivery_minute":2,
+            "category":"fast food",
+            "address":"Narimanov 45 Baku Azerbaijan",
+            "img_url":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/2339px-McDonald%27s_Golden_Arches.svg.png"
+        },
+        {   
+            "id":"0005",
+            "name":"Papa John's",
+            "cuisine":"pizza dring roll",
+            "delivery_price":2,
+            "delivery_minute":4,
+            "category":"pizza",
+            "address":"Ganclik 45 Baku Azerbaijan",
+            "img_url":"https://media-cdn.tripadvisor.com/media/photo-s/1a/fe/be/14/papa-john-s-azerbaijan.jpg"
+        },
+        {   
+            "id":"0006",
+            "name":"Mc donald's",
+            "cuisine":"pizza dring roll",
+            "delivery_price":null,
+            "delivery_minute":2,
+            "category":"fast food",
+            "address":"Narimanov 45 Baku Azerbaijan",
+            "img_url":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/2339px-McDonald%27s_Golden_Arches.svg.png"
+        },
+        {   
+            "id":"0007",
+            "name":"Papa John's",
+            "cuisine":"pizza dring roll",
+            "delivery_price":2,
+            "delivery_minute":4,
+            "category":"pizza",
+            "address":"Ganclik 45 Baku Azerbaijan",
+            "img_url":"https://media-cdn.tripadvisor.com/media/photo-s/1a/fe/be/14/papa-john-s-azerbaijan.jpg"
+        },
+        {   
+            "id":"0008",
+            "name":"Mc donald's",
+            "cuisine":"pizza dring roll",
+            "delivery_price":null,
+            "delivery_minute":2,
+            "category":"fast food",
+            "address":"Narimanov 45 Baku Azerbaijan",
+            "img_url":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/2339px-McDonald%27s_Golden_Arches.svg.png"
+        },
+        {   
+            "id":"0009",
+            "name":"Papa John's",
+            "cuisine":"pizza dring roll",
+            "delivery_price":2,
+            "delivery_minute":4,
+            "category":"pizza",
+            "address":"Ganclik 45 Baku Azerbaijan",
+            "img_url":"https://media-cdn.tripadvisor.com/media/photo-s/1a/fe/be/14/papa-john-s-azerbaijan.jpg"
+        },
+        {   
+            "id":"0010",
+            "name":"Mc donald's",
+            "cuisine":"pizza dring roll",
+            "delivery_price":null,
+            "delivery_minute":2,
+            "category":"fast food",
+            "address":"Narimanov 45 Baku Azerbaijan",
+            "img_url":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/2339px-McDonald%27s_Golden_Arches.svg.png"
+        },
+        {   
+            "id":"0011",
+            "name":"Papa John's",
+            "cuisine":"pizza dring roll",
+            "delivery_price":2,
+            "delivery_minute":4,
+            "category":"pizza",
+            "address":"Ganclik 45 Baku Azerbaijan",
+            "img_url":"https://media-cdn.tripadvisor.com/media/photo-s/1a/fe/be/14/papa-john-s-azerbaijan.jpg"
+        },
+        {   
+            "id":"0012",
+            "name":"Mc donald's",
+            "cuisine":"pizza dring roll",
+            "delivery_price":null,
+            "delivery_minute":2,
+            "category":"fast food",
+            "address":"Narimanov 45 Baku Azerbaijan",
+            "img_url":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/2339px-McDonald%27s_Golden_Arches.svg.png"
+        }
+      
+    ]
+    
+}
