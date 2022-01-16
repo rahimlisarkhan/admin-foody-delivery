@@ -1,0 +1,45 @@
+{
+    "categories": [{
+            "id": "0001",
+            "name": "pizza",
+            "slug": "pizza",
+            "img_url": "https://pizzamizza.az/upload/resize_cache/iblock/05c/254_254_2/05c1187c21bea988b38e31089dfec366.jpg?161761730265933"
+        },
+        {
+            "id": "0002",
+            "name": "fast food",
+            "slug": "fast-food",
+            "img_url": "https://immunitet.az/uploads/posts/2017-07/1501420551_1483453865_fast1.jpg"
+        },
+        {
+            "id": "0003",
+            "name": "coffee",
+            "slug": "coffee",
+            "img_url": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/newscms/2019_33/2203981/171026-better-coffee-boost-se-329p.jpg"
+        },
+        {
+            "id": "0004",
+            "name": "chinese",
+            "slug": "chinese",
+            "img_url": "https://i.insider.com/5c017d3ede34c438983e30b3?width=1136&format=jpeg"
+        },
+        {
+            "id": "0005",
+            "name": "indian",
+            "slug": "indian",
+            "img_url": "https://sukhis.com/app/uploads/2017/06/Appetizers.jpg"
+        },
+        {
+            "id": "0006",
+            "name": "sea food",
+            "slug": "sea-food",
+            "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Plateau_van_zeevruchten.jpg/1200px-Plateau_van_zeevruchten.jpg"
+        },
+        {
+            "id": "0007",
+            "name": "chocolate",
+            "slug": "chocolate",
+            "img_url": "https://chocolatecoveredkatie.com/wp-content/uploads/2020/08/Homemade-Chocolate-Bars.jpg"
+        }
+    ]
+}

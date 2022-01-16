@@ -3,6 +3,7 @@ import restaurantsNextPage1 from "../mocks/restaurant/rest1.json"
 import restaurantsNextPage2 from "../mocks/restaurant/rest2.json"
 import restaurantsNextPage3 from "../mocks/restaurant/rest3.json"
 import { toast } from 'react-toastify';
+import { t } from "i18next";
 
 
 
@@ -38,19 +39,16 @@ export const getRestaurants = async (page) => {
 
     try {
         const res = await Axios.get("/restaurants", config)
-        console.log(res.data.result);
         return res
     } catch ({ message }) {
         toast.error(message)
     }
 }
 
-
-
 export const removeRestaurants = async (id) => {
     try {
         const res = await Axios.delete(`/restaurants/delete/${id}`)
-        toast.success("Successfully removed")
+        toast.success(t("success_message"))
 
         return res
     } catch ({ message }) {

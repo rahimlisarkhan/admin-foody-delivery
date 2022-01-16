@@ -6,11 +6,9 @@ import {
 import React, { lazy, Suspense } from 'react';
 import RootPage from '../pages';
 import { AppProvider } from "./AppProvider";
-import Loading from '../components/Loading/Loading';
+import Loading from '../components/Loading';
 
 const LoginPage = lazy(()=>import('../pages/login'));
-
-// const NotFound = <h1>Not found 404</h1>
 
 function App() {
 
@@ -20,7 +18,6 @@ function App() {
         <Switch>
           <Route path="/panel" component={RootPage} />
           <Route path="/login" component={LoginPage}  />
-          {/* <Route component={NotFound} /> */}
           <Redirect from="/" to="/panel" />
         </Switch>
       </AppProvider>

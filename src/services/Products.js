@@ -3,6 +3,7 @@ import productsNextPage1 from "../mocks/product/product.json"
 import productsNextPage2 from "../mocks/product/productPage2.json"
 import productsNextPage3 from "../mocks/product/productPage3.json"
 import { toast } from 'react-toastify';
+import { t } from "i18next";
 
 
 
@@ -51,7 +52,7 @@ export const getProducts = async (page) => {
 export const removeProduct = async (id) => {
     try {
         const res = await Axios.delete(`/products/delete/${id}`)
-        toast.success("Successfully removed")
+        toast.success(t("success_message"))
 
         return res
     } catch ({ message }) {

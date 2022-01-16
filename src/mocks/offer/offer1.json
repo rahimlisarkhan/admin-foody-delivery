@@ -1,0 +1,27 @@
+{
+    "offers": [{
+            "id": "0001",
+            "title": "Menu That Always Make You Fall In Love",
+            "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+            "img_url": "https://pizzamizza.az/upload/resize_cache/iblock/05c/254_254_2/05c1187c21bea988b38e31089dfec366.jpg?161761730265933"
+        },
+        {
+            "id": "0002",
+            "title": "Yummy Always Papa John’s Pizza.Agree?",
+            "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+            "img_url": "https://immunitet.az/uploads/posts/2017-07/1501420551_1483453865_fast1.jpg"
+        },
+        {
+            "id": "0003",
+            "title": "Yummy Always Papa John’s Pizza.Agree?",
+            "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+            "img_url": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/newscms/2019_33/2203981/171026-better-coffee-boost-se-329p.jpg"
+        },
+        {
+            "id": "0004",
+            "title": "Do You Like French Fries? Mmm...",
+            "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+            "img_url": "https://i.insider.com/5c017d3ede34c438983e30b3?width=1136&format=jpeg"
+        }
+    ]
+}

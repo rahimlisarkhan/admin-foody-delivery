@@ -4,6 +4,7 @@
     "add product": "məhsul əlavə et",
     "add restaurant": "restoran əlavə et",
     "add category": "kateqoriya əlavə et",
+    "success_message":"Əməliyyat uğurludur!",
     "create": "yarat",
     "add offer": "təklif əlavə et",
     "title delete": "Silindiyinizə əminsinizmi?",
@@ -26,6 +27,13 @@
       "logout": "Çıxış"
     },
     "form":{
+      "id":"ID",
+      "customer_id":"Müştəri ID", 
+      "created_at":"Tarix", 
+      "amount":"Məbləğ", 
+      "payment":"Ödəniş", 
+      "contact":"Əlaqə",
+      "img_url":"şəkil",
       "upload title":"Şəkilinizi yükləyin",
       "form title":"Təsvirinizi və lazımi məlumatları əlavə edin",
       "name":"Ad",
@@ -38,7 +46,7 @@
       "address":"Ünvan",
       "category":"Kateqoriya",
       "restaurants":"Restoranlar",
-      "slug":"Link başlığı (fast-food)",
+      "slug":"Link başlığı",
       "upload":"Yüklə"
     }
   }

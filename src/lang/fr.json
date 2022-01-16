@@ -3,6 +3,7 @@
     "Welcome to React": "Bienvenue à React et react-i18next",
     "add product": "ajouter produit",
     "create": "créer",
+    "success_message":"L'opération est réussie!",
     "add restaurant": "ajouter restaurant",
     "add category": "ajouter catégorie",
     "add offer": "add offre",
@@ -26,6 +27,13 @@
       "logout": "Déconnexion"
     },
     "form":{
+      "id":"ID",
+      "customer_id":"Identifiant client", 
+      "created_at":"Date", 
+      "amount":"Montant", 
+      "payment":"Paiement", 
+      "contact":"Contact",
+      "img_url":"image",
       "upload title":"Téléchargez votre image",
       "form title":"Ajoutez votre description et les informations nécessaires",
       "name" :"Nom",

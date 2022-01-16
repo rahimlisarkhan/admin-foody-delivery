@@ -1,0 +1,66 @@
+{
+    "orders": [{
+            "id": "0001",
+            "customer_id": "0105",
+            "created_at": "25 Dec 2021",
+            "address": "Ahmedli 78 Baku",
+            "amount": 249,
+            "payment": "cash",
+            "contact": 994514445566
+        },
+        {
+            "id": "0002",
+            "customer_id": "0244",
+            "created_at": "12 Jan 2022",
+            "address": "Nizami 45 Baku",
+            "amount": 120,
+            "payment": "card",
+            "contact": 994517775566
+        },
+        {
+            "id": "0003",
+            "customer_id": "0105",
+            "created_at": "25 Dec 2021",
+            "address": "Nasimi 12 Baku",
+            "amount": 249,
+            "payment": "cash",
+            "contact": 994514445566
+        },
+        {
+            "id": "0004",
+            "customer_id": "0109",
+            "created_at": "29 Dec 2021",
+            "address": "Ahmedli 12 Baku",
+            "amount": 40,
+            "payment": "cash",
+            "contact": 994514445566
+        },
+        {
+            "id": "0005",
+            "customer_id": "0222",
+            "created_at": "25 Feb 2022",
+            "address": "Hadi 19 Sumgayit",
+            "amount": 19,
+            "payment": "card",
+            "contact": 994514445566
+        },
+        {
+            "id": "0006",
+            "customer_id": "0305",
+            "created_at": "29 Dec 2021",
+            "address": "Ahmedli 12 Baku",
+            "amount": 29,
+            "payment": "cash",
+            "contact": 994514445566
+        },
+        {
+            "id": "0007",
+            "customer_id": "0264",
+            "created_at": "29 Dec 2021",
+            "address": "Ag Shahar 11 Baku",
+            "amount": 159,
+            "payment": "card",
+            "contact": 994514445566
+        }
+    ]
+}

@@ -3,7 +3,7 @@ import { LoadingOverlay } from "./Loading.styled"
 import loading from '../../image/loading/loading.gif'
 
 
-const Loading = () => {
+export const Loading = () => {
 
     return(
         <LoadingOverlay>

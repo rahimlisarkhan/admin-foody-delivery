@@ -3,6 +3,7 @@
     "Welcome to React": "Welcome to React and react-i18next",
     "add product": "add product",
     "add restaurant": "add restaurant",
+    "success_message":"The operation is successful!",
     "create product": "create",
     "add category": "add category",
     "title delete":"Are you sure it’s deleted ?",
@@ -26,7 +27,14 @@
       "logout": "Logout"
     },
     "form":{
+      "customer_id":"Customer ID",
+      "created_at":"Date",
+      "amount":"Amount",
+      "payment":"Payment",
+      "contact":"Contact",
       "upload title":"Upload your image",
+      "id":"ID",
+      "img_url":"image",
       "form title":"Add your description and necessary information",
       "name":"Name",
       "title":"Title",

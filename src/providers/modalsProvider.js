@@ -9,10 +9,16 @@ import { deleteProduct } from '../store/slices/product/productSlice'
 import { useDispatch } from 'react-redux';
 import { removeRestaurants } from '../services/Restaurants';
 import { deleteRestaurant } from '../store/slices/restaurant/restaurantSlice';
+import { deleteCategory } from '../store/slices/category/categorySlice';
+import { removeCategories } from '../services/Category';
+import { removeOrders } from '../services/Order';
+import { deleteOrder } from '../store/slices/order/orderSlice';
+import { removeOffers } from '../services/Offer';
+import { deleteOffer } from '../store/slices/offer/offerSlice';
+
 export const ModalsContext = createContext();
 
 const ModalsContextProvider = ({ children }) => {
-
     const dispatch = useDispatch()
 
     const [openProductModal, setOpenProductModal] = useState(false);
@@ -26,24 +32,32 @@ const ModalsContextProvider = ({ children }) => {
     const [openOfferModal, setOpenOfferModal] = useState(false);
     const [deleteOfferModalID, setDeleteOfferModalID] = useState("");
 
-    const deleteOfferModal = () => {
+    const deleteOfferModal = async () => {
         setOpenOfferModal(true)
-        console.log("Offer", deleteOfferModalID);
+        const res = await removeOffers(deleteOfferModalID)
+        if (res?.status === 204) {
+            dispatch(deleteOffer(deleteOfferModalID))
+        }
     }
 
-    const deleteOrderModal = () => {
+    const deleteOrderModal = async () => {
         setOpenOrderModal(true)
-        console.log("Order", deleteOrderModalID);
+        const res = await removeOrders(deleteOrderModalID)
+        if (res?.status === 204) {
+            dispatch(deleteOrder(deleteOrderModalID))
+        }
     }
 
-    const deleteCategoryModal = () => {
+    const deleteCategoryModal = async () => {
         setOpenCategoryModal(true)
-        console.log("category", deleteCategoryModalID);
+        const res = await removeCategories(deleteCategoryModalID)
+        if (res?.status === 204) {
+            dispatch(deleteCategory(deleteCategoryModalID))
+        }
     }
 
     const deleteRestaurantModal = async () => {
         setOpenRestaurantModal(true)
-        console.log("rest", deleteRestaurantModalID);
         const res = await removeRestaurants(deleteRestaurantModalID)
         if (res?.status === 204) {
             dispatch(deleteRestaurant(deleteRestaurantModalID))

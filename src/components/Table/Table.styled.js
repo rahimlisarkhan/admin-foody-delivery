@@ -17,5 +17,6 @@ max-height: 440px
 `
 
 export const TableCellStyled = styled(TableCell)`
-    min-width:${({cellwidth})=>`${cellwidth}px`}
+    min-width:${({cellwidth})=>`${cellwidth}px`};
+    text-transform: capitalize;
 `
