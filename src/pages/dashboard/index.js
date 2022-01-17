@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { AuthHOC } from '../../components/HOC/authRequired';
 import DashboardContainer from '../../features/dashbaord/DashboardContainer';
 
 const DashboardPage = () => {
@@ -9,4 +10,4 @@ const DashboardPage = () => {
 }
 
 
-export default DashboardPage
+export default AuthHOC(DashboardPage)

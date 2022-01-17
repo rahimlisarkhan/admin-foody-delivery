@@ -47,6 +47,7 @@ export const FormInput = styled(Field)`
 
 export const FormSubmit = styled(Button).attrs(()=>({
     variant:"contained",
+    type:"submit"
 }))`
     ${({theme})=>css`
     width: 100%;

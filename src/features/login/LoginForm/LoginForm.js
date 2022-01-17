@@ -5,6 +5,7 @@ import { FormGroup } from '@mui/material';
 import { Formik, Form, } from 'formik';
 import * as Yup from "yup";
 import TypographyText from "../../../components/Typograph";
+import { withRouter } from "react-router-dom";
 
 const SignupSchema = Yup.object().shape({
     username: Yup.string()
@@ -15,7 +16,7 @@ const SignupSchema = Yup.object().shape({
         .required('Required'),
 });
 
-export const LoginForm = () => {
+const LoginForm = ({ history: { push } }) => {
 
     const initialValues = {
         username: '',
@@ -23,13 +24,14 @@ export const LoginForm = () => {
     }
     const onSubmit = (values) => {
         console.log(values);
-
+        localStorage.setItem("auth", "true")
+        push("/panel")
     }
 
     return (
         <FormContentStyled>
             <FormColStyled>
-                <TypographyText  font="35" color="gray" >
+                <TypographyText font="35" color="gray" >
                     Welcome Admin
                 </TypographyText>
                 <Formik initialValues={initialValues}
@@ -46,15 +48,17 @@ export const LoginForm = () => {
                             <FormInputError name="password" component="small" />
                         </FormGroup>
                         <FormGroup>
-                        <FormSubmit>Sign in</FormSubmit>
-                    </FormGroup>
+                            <FormSubmit>Sign in</FormSubmit>
+                        </FormGroup>
                     </Form>
-          
+
                 </Formik>
             </FormColStyled>
-            <FormColStyled bg>
+            <FormColStyled bg="true">
                 <Image src={loginLogo} />
             </FormColStyled>
         </FormContentStyled>
     )
 }
+
+export default withRouter(LoginForm)
