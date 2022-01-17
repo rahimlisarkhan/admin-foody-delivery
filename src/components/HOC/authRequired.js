@@ -4,7 +4,7 @@ export const AuthHOC = HocComponent => {
 
     return () => {
         let accessAuth = localStorage.getItem("auth") || false
-        console.log(accessAuth);
+        
         if (accessAuth === "true") {
             return <HocComponent />
         }
