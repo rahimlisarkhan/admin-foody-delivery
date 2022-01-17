@@ -1,7 +1,4 @@
-import { AuthHOC } from "../../components/HOC/authRequired"
 import LoginContainer from "../../features/login/LoginContainer"
-
-
 const Login = () => {
 
     return(
@@ -10,4 +7,4 @@ const Login = () => {
 }
 
 
-export default AuthHOC(Login)
+export default Login
