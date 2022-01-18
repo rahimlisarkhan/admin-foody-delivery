@@ -18,7 +18,7 @@ function App() {
           <Switch>
             <Route path={ROUTE.MAIN.PANEL.HREF} component={RootPage} />
             <Route path={ROUTE.MAIN.LOGOUT.HREF} component={LoginPage} />
-            <Redirect from={ROUTE.MAIN.PANEL.HREF} to={ROUTE.MAIN.PANEL.HREF} />
+            <Redirect from={ROUTE.MAIN.HREF} to={ROUTE.MAIN.PANEL.HREF} />
           </Switch>
         </Suspense>
     </AppProvider >
