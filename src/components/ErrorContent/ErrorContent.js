@@ -4,10 +4,7 @@ import { ErrorContentStyled } from "./ErrorContent.styled";
 import Button from "../Button"
 import { withRouter } from "react-router-dom";
 
-
 export const ErrorContent = withRouter(({ history: { goBack } }) => {
-
-
     return (
         <ErrorContentStyled>
             <Image width="700" src={image404} alt="404" />

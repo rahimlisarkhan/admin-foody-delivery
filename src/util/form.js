@@ -43,7 +43,8 @@ export const FORM = {
             delivery_price:"",
             delivery_minute:"",
             address:"",
-            category:""
+            category:"",
+            slug:""
         },
         inputs:[
             {   
@@ -81,6 +82,12 @@ export const FORM = {
                 label:"category",
                 name:"category",
                 type:"select"
+            },
+            {   
+                id:"007",
+                label:"slug",
+                name:"slug",
+                type:"text"
             },
           
         ]
