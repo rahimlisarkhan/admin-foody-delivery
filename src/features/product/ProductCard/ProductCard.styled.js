@@ -10,7 +10,7 @@ import styled, { css } from 'styled-components'
 
 export const CardContentStyled = styled(CardContent)`
     ${({theme})=>css`
-        padding: 0 16px
+        padding: 0 16px !important;
     `}
 
 `
@@ -34,7 +34,7 @@ export const CardImage = styled(CardMedia).attrs(()=>({
     component:"img",
     height:"160"
 }))`
-    width: 160px;
+    width: 160px !important;
     margin:15px;
     object-fit:cover
 `
@@ -47,6 +47,10 @@ export const CardActionsStyled = styled(CardActions)`
 `
 
 export const ButtonDeleteStyled = styled(Button)`
-    padding:0;
-    justify-content: flex-end;
+    padding:0 !important;
+    justify-content: flex-end !important;
+
+    svg{
+        fill:${({theme})=>theme.colors.mainRed};
+    }
 `

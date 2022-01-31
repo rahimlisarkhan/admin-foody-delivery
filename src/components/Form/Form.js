@@ -40,7 +40,7 @@ export const Form = ({ selectOptions, setIsClose,setForm, form: { title, initial
                             <Styled.FormSubTitle>
                                 {t("form title")}
                             </Styled.FormSubTitle>
-                            <Styled.FormContent height={310}>
+                            <Styled.FormContent height={400}>
                                 {inputs?.map(field => {
                                     switch (field.type) {
                                         case "text":

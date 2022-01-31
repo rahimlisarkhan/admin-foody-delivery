@@ -9,7 +9,7 @@ export const PaginationContent = styled(Grid).attrs(()=>({
     spacing:1
 }))`
 justify-content: center;
-    margin-top:30px;
+    margin-top:30px !important;
     & button{
         width:64px;
         height:64px;
@@ -20,8 +20,8 @@ justify-content: center;
     }
 
     & .Mui-selected{
-        background-color:${({theme})=>theme.colors.lightPink};
-        color:${({theme})=>theme.colors.white};
+        background-color:${({theme})=>theme.colors.lightPink} !important;
+        color:${({theme})=>theme.colors.white} !important;
 
     }
     

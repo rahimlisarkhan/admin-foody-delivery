@@ -7,6 +7,7 @@ export const TypographyText = styled(Typography).attrs(()=>({
     component:"div"
 }))`
     padding: 0 !important;
+    /* margin: 0 !important; */
     ${({theme,font,color})=>css`
         color:${()=>{
             switch(color){

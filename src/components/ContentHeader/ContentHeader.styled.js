@@ -10,7 +10,7 @@ export const ContentHeaderRow = styled(Grid).attrs(()=>({
     ${({theme})=>css`
         align-items: center;
         height:73px;
-        margin-top:25px;
+        margin-top:25px !important;
         background: ${theme.colors.darkBlue_3};
         border-radius: 14px;
         padding: ${theme.boxModel.padding.small};
@@ -38,7 +38,7 @@ export const ContentHeaderTitle = styled(Typography).attrs(()=>({
 }))`
     ${({theme})=>css`
         color:${({theme})=>theme.colors.grayText};
-        font-size: ${({theme})=>theme.font.size.large};
+        font-size: ${({theme})=>theme.font.size.large} !important;
         font-weight:500;
     `}
 `

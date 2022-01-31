@@ -39,7 +39,7 @@ width: 30%;
 
 export const FormGroupStyled = styled(FormGroup)`
     display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
     justify-content: space-between;
     margin:40px 0 ;
 `
@@ -66,7 +66,7 @@ export const FormButton = styled(ButtonStyled).attrs(({ submit }) => ({
     flex:1;
     height: 50px;
     margin:0;
-    background-color: ${({ theme, dark }) => dark && theme.colors.darkBlue_5};
+    background-color: ${({ theme, dark }) => dark && theme.colors.darkBlue_5} !important;
     &:nth-child(odd){
         margin-right: 40px;
     }

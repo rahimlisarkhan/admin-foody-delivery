@@ -9,7 +9,7 @@ export const ProductsList = styled(Grid).attrs(()=>({
     spacing:2,
 }))`
 
-margin-top:${({theme})=> theme.boxModel.margin.normal} ;
+margin-top:${({theme})=> theme.boxModel.margin.normal} !important;
 height: 400px;
 overflow: auto;
 `

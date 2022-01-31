@@ -82,7 +82,7 @@ const TableContent = ({ rows, deleteItem }) => {
                                                     );
                                                 })}
                                                 <TableCell key={row.id} align={"center"} onClick={() => handleDelete(row.id)} >
-                                                    <Button variant="text">
+                                                    <Button variant="text" >
                                                         <IconDelete />
                                                     </Button>
                                                 </TableCell>

@@ -23,8 +23,9 @@ export const Card = styled(Grid).attrs(()=>({
 
 export const CardTitleContent = styled(CardContent)`
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column ;
+    justify-content: center ;
+    padding: 0 !important;
 `
 
 export const CardTitle = styled(Typography).attrs(()=>({
@@ -44,9 +45,13 @@ color: ${({theme})=>theme.colors.grayText1};
 `
 
 export const ButtonDelete = styled(Button)`
-position: absolute;
+position: absolute !important;
 top: 0;
-right: -15px;
+right: -15px ;
+
+svg{
+    fill: ${({theme})=>theme.colors.mainRed};
+}
 
 `
 
