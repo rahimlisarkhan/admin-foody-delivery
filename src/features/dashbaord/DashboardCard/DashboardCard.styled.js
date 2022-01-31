@@ -12,11 +12,11 @@ export const DashboardCardStyled = styled(Grid).attrs(({col})=>({
     height: 472px;
     background-color: ${({theme})=>theme.colors.darkBlue_3};
     border-radius: 14px;
-    margin:15px 0;
+    margin:15px 0 !important;
     padding: 20px !important;
 
     &:nth-child(odd){
-        margin-right:30px;
+        margin-right:30px !important;
     }
 `
 

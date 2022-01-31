@@ -14,14 +14,16 @@ export const TypographyText = styled(Typography).attrs(()=>({
                     return theme.colors.textBlack;
                 case "gray":
                     return theme.colors.grayText1;
+                case "graylight":
+                    return theme.colors.grayText;
                 case "green":
                     return theme.colors.textGreenLight;
                 default:
                     return theme.colors.textBlack;
 
             }
-        }
-        };
-        font-size:${font ? `${font}px` : theme.font.size.medium}
+        } 
+        }!important;
+        font-size:${font ? `${font}px` : theme.font.size.medium} !important;
         `}
 `

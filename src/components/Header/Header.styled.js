@@ -1,26 +1,29 @@
+import { Box, Container } from "@mui/material";
 import styled, { css } from "styled-components";
-
-
-
-
 
 export const HeaderStyled = styled.header`
     ${({ theme }) => css`
-    background: ${theme.colors.darkBlue_3};
-    padding:${theme.boxModel.padding.normal};
     margin-bottom:${theme.boxModel.margin.normal};
-    color:${theme.colors.white} !important;
     `}
-    display:flex;
-    justify-content:space-between;
     position: fixed;
-    width: 97%;
+    width: 97.5%;
     top:0;
     left:22px;
-    height: 64px;
-    border-radius:0 0 10px 10px;
     z-index:1000;
 `;
+
+export const HeaderContent = styled(Box)`
+    display:flex;
+    justify-content:space-between !important;
+    height: 64px;
+    ${({ theme }) => css`
+    background: ${theme.colors.darkBlue_3};
+    padding:${theme.boxModel.padding.normal};
+    color:${theme.colors.white} !important;
+    `}
+    border-radius:0 0 10px 10px;
+`;
+
 
 
 export const AdminContent = styled.div`

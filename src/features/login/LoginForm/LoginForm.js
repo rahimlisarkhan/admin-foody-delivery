@@ -31,7 +31,7 @@ const LoginForm = ({ history: { push } }) => {
     return (
         <FormContentStyled>
             <FormColStyled>
-                <TypographyText font="35" color="gray" >
+                <TypographyText font="35" color="graylight" >
                     Welcome Admin
                 </TypographyText>
                 <Formik initialValues={initialValues}

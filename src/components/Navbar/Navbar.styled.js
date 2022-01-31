@@ -26,7 +26,7 @@ export const NavbarStyled = styled(Grid).attrs(()=>(
 `
 
 export const NavList = styled.div`
-width: 280px;
+width: 290px;
 height: 474px;
 position:fixed;
 top:90px;
@@ -58,5 +58,5 @@ components:"h3"
 width: 100px;
 text-align: center;
 color:${({theme})=> theme.colors.grayText};
-font-size: ${({theme})=> theme.font.size.extraSmall} ;
+font-size: ${({theme})=> theme.font.size.extraSmall}!important;
 `
